@@ -20,4 +20,17 @@ def click_event(event, x, y, flags, params):
                     (x,y), font, 1,
                     (255, 255, 0), 2)
         cv2.imshow('image', img)
+
+
+if __name__=="__main__":
+
+    img = cv2.imread('lena.jpg', 1)
+
+    cv2.imshow('image', img)
+
+    cv2.setMouseCallback('image', click_event)
+
+    cv2.waitKey(0)
+  
+    cv2.destroyAllWindows()
   
