@@ -1,2 +1,0 @@
-#Program to extract frames 
-
